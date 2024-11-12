@@ -85,6 +85,9 @@
   .subtitle-2 {
     @apply text-[14px] leading-[20px] font-semibold;
   }
+  .subtitle-3z {
+    @apply text-[12px] leading-[16px] font-semibold;
+  }
   .body-1 {
     @apply text-[16px] leading-[24px] font-normal;
   }
@@ -349,7 +352,7 @@
     @apply my-3 flex items-center gap-2 rounded-full p-1 text-light-100 sm:justify-center sm:bg-brand/10 lg:justify-start lg:p-3 !important;
   }
   .header-user-avatar {
-    @apply aspect-square w-10 rounded-full object-cover !important;
+    @apply aspect-square w-9 rounded-full object-cover !important;
   }
   .mobile-nav {
     @apply h5 flex-1 gap-1 text-brand !important;

@@ -50,6 +50,7 @@ const AuthForm = ({ type }: { type: FormType }) => {
     setIsLoading(true);
     setErrorMessage("");
 
+    /* here creating account: */
     try {
       const user =
         type === "sign-up"

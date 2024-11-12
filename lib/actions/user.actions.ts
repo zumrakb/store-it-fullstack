@@ -1,6 +1,6 @@
 "use server";
 import { createAdminClient, createSessionClient } from "../appwrite";
-import { ID, Query } from "node-appwrite";
+import { Client, ID, Query } from "node-appwrite";
 import { appwriteConfig } from "../appwrite/config";
 import { parseStringify } from "../utils";
 import path from "path";
@@ -107,7 +107,7 @@ export const getCurrentUser = async () => {
 };
 
 export const signOutUser = async () => {
-  const { account } = await Client();
+  const { account } = await createSessionClient();
 
   try {
     await account.deleteSession("current");

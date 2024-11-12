@@ -82,5 +82,5 @@ export const sortTypes = [
 ];
 
 export const avatarPlaceholderUrl =
-  "https://cdn.pixabay.com/photo/2017/03/31/17/44/avatar-2191933_1280.png";
+  "https://img.freepik.com/premium-psd/3d-illustration-person-with-leather-jacket_23-2149436206.jpg";
 export const MAX_FILE_SIZE = 50 * 1024 * 1024; // 50MB
