@@ -4,3 +4,6 @@
 - NextJS 15
 - TailwindCSS
 - ESLint & Prettier
+- ShadCn
+- Appwrite
+  
