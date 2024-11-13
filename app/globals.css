@@ -64,6 +64,9 @@
   .h1 {
     @apply text-[34px] leading-[42px] font-bold;
   }
+  .h1v2 {
+    @apply text-[26px] leading-[30px] font-bold;
+  }
   .h2 {
     @apply text-[24px] leading-[36px] font-bold;
   }
@@ -286,7 +289,7 @@
 
   /* Card */
   .file-card {
-    @apply flex cursor-pointer flex-col gap-6 rounded-[18px] bg-white p-5 shadow-sm transition-all hover:shadow-drop-3 !important;
+    @apply flex cursor-pointer flex-col gap-6 rounded-[18px] bg-white p-4 shadow-sm transition-all hover:shadow-drop-3 !important;
   }
   .file-card-details {
     @apply flex flex-col gap-2 text-light-100 !important;
