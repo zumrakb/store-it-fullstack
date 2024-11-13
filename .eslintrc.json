@@ -6,4 +6,7 @@
     "plugin:tailwindcss/recommended",
     "prettier"
   ]
+  "rules": {
+    "no-undef": "off"
+  }
 }
