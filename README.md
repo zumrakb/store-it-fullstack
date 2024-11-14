@@ -1,9 +1,14 @@
 ## STORE IT - Google Drive Clone
 
-# Technologies
+# Tech Stack
+
 - NextJS 15
-- TailwindCSS
+- React 19
+- TypeScript
+- Node Appwrite
 - ESLint & Prettier
+- TailwindCSS
 - ShadCn
-- Appwrite
+- React Dropzone
+
   
