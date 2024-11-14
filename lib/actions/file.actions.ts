@@ -62,7 +62,7 @@ export const uploadFile = async ({
   }
 };
 
-const createQueries = (currentUser: Models.Document) => {
+const createQueries = (currentUser: Models.Document, types: string[]) => {
   const queries = [
     Query.or([
       Query.equal("owner", [currentUser.$id]),
@@ -70,11 +70,14 @@ const createQueries = (currentUser: Models.Document) => {
     ]),
   ];
 
+  if (types.length > 0) queries.push(Query.equal("type", types));
+
   /* todo: search, sort,limits.. we can extend them. */
 
   return queries;
 };
-export const getFiles = async () => {
+
+export const getFiles = async ({ types = [] }: GetFilesProps) => {
   const { databases } = await createAdminClient();
   try {
     /* files based on many diferent criterias: */
@@ -82,7 +85,7 @@ export const getFiles = async () => {
     const currentUser = await getCurrentUser();
     if (!currentUser) throw new Error("User not found");
 
-    const queries = createQueries(currentUser);
+    const queries = createQueries(currentUser, types);
 
     const files = await databases.listDocuments(
       appwriteConfig.databaseId,
@@ -116,6 +119,58 @@ export const renameFile = async ({
 
     revalidatePath(path);
     return parseStringify(updatedFile);
+  } catch (error) {
+    handleError(error, "Failed to rename file");
+  }
+};
+
+export const updateFileUsers = async ({
+  fileId,
+  emails,
+
+  path,
+}: UpdateFileUsersProps) => {
+  const { databases } = await createAdminClient();
+
+  try {
+    const updatedFile = await databases.updateDocument(
+      appwriteConfig.databaseId,
+      appwriteConfig.filesCollectionId,
+      fileId,
+      {
+        users: emails,
+      }
+    );
+
+    revalidatePath(path);
+    return parseStringify(updatedFile);
+  } catch (error) {
+    handleError(error, "Failed to rename file");
+  }
+};
+
+export const deleteFile = async ({
+  fileId,
+  bucketFileId,
+
+  path,
+}: DeleteFileProps) => {
+  const { databases, storage } = await createAdminClient();
+
+  try {
+    const deletedFile = await databases.deleteDocument(
+      /* i delete from that id, from that collection which have fileid... */
+      appwriteConfig.databaseId,
+      appwriteConfig.filesCollectionId,
+      fileId
+    );
+
+    if (deletedFile) {
+      await storage.deleteFile(appwriteConfig.bucketId, bucketFileId);
+    }
+
+    revalidatePath(path);
+    return parseStringify({ status: "success" });
   } catch (error) {
     handleError(error, "Failed to rename file");
   }
