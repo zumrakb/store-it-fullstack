@@ -11,7 +11,7 @@ STORE IT is a storage management and file-sharing platform that lets users effor
 - **Backend:** Appwrite Node SDK  
 - **Utilities:** ESLint, Prettier, React Dropzone, Use Debounce, ShadCN
 
-# Project Screenshots
+## Project Screenshots
 
 Here are some screenshots showcasing the functionality and design of the project:
 
@@ -24,7 +24,7 @@ Here are some screenshots showcasing the functionality and design of the project
 #### Row 1
 <img src="https://github.com/user-attachments/assets/18921104-10a4-40a4-8148-783b7cdb8c4a" alt="Screenshot 1" width="30%" />
 <img src="https://github.com/user-attachments/assets/991f9fdd-2ec7-4df0-ac27-92007aa349af" alt="Screenshot 2" width="30%" />
-<img src="https://github.com/user-attachments/assets/a0cdc268-d0ba-40f7-9f87-624fa72f8853" alt="Screenshot 3" width="30%" />
+<img src="https://github.com/user-attachments/assets/a0cdc268-d0ba-40f7-9f87-624fa72f8853" alt="Screenshot 3" width="20%" />
 
 #### Row 2
 <img src="https://github.com/user-attachments/assets/20faf0b3-6781-432a-ba58-4859ac7e1369" alt="Screenshot 4" width="30%" />
