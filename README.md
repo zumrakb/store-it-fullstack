@@ -1,7 +1,7 @@
 # STORE IT  
 A Storage and File Sharing Platform  
 
-[Live Demo](https://store-management-solution-cf5wycvcz-zumrakbs-projects.vercel.app/sign-in)
+WEBSITE: [Live Demo](https://store-management-solution-cf5wycvcz-zumrakbs-projects.vercel.app/sign-in)
 
 ## Introduction  
 STORE IT is a storage management and file-sharing platform that lets users effortlessly upload, organize, and share files. Built using the latest Next.js 15 and the Appwrite Node SDK, this platform provides seamless file management capabilities with a modern and responsive design.
