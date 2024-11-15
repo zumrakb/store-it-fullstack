@@ -10,5 +10,6 @@
 - TailwindCSS
 - ShadCn
 - React Dropzone
+- Use Debounce
 
   
