@@ -73,8 +73,8 @@ const FileUploader = ({ ownerId, accountId, className }: Props) => {
         <Image
           src={"/assets/icons/upload.svg"}
           alt={"upload"}
-          width={24}
-          height={24}
+          width={16}
+          height={16}
         />
         <p>Upload </p>
       </Button>

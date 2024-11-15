@@ -65,7 +65,7 @@
     @apply text-[34px] leading-[42px] font-bold;
   }
   .h1v2 {
-    @apply text-[26px] leading-[30px] font-bold;
+    @apply text-[25px] leading-[30px] font-bold;
   }
   .h2 {
     @apply text-[24px] leading-[36px] font-bold;
@@ -92,10 +92,13 @@
     @apply text-[12px] leading-[16px] font-semibold;
   }
   .body-1 {
-    @apply text-[16px] leading-[24px] font-normal;
+    @apply text-[15px] leading-[22px] font-normal;
   }
   .body-2 {
     @apply text-[14px] leading-[20px] font-normal;
+  }
+  .body-3 {
+    @apply text-[12px] leading-[18px] font-normal;
   }
   .button {
     @apply text-[14px] leading-[20px] font-medium;
@@ -180,30 +183,30 @@
 
   /* Root Layout */
   .main-content {
-    @apply remove-scrollbar h-full flex-1 overflow-auto bg-light-400 px-5 py-7 sm:mr-7 sm:rounded-[30px] md:mb-7 md:px-9 md:py-10 !important;
+    @apply remove-scrollbar h-full flex-1 overflow-auto bg-light-400 px-3 py-6 sm:mr-7 sm:rounded-[30px] md:mb-7 md:px-7 md:py-8 !important;
   }
 
   /* Dashboard */
   .dashboard-container {
-    @apply mx-auto grid max-w-7xl grid-cols-1 gap-6 md:grid-cols-2 xl:gap-10 !important;
+    @apply mx-auto grid max-w-7xl grid-cols-1 gap-5 md:grid-cols-2 xl:gap-7 !important;
   }
   .dashboard-summary-list {
-    @apply mt-6 grid grid-cols-1 gap-4 xl:mt-10 xl:grid-cols-2 xl:gap-9 !important;
+    @apply mt-3 grid grid-cols-1 gap-1 xl:mt-4 xl:grid-cols-2 xl:gap-3 !important;
   }
   .dashboard-summary-card {
-    @apply relative mt-6 rounded-[20px] bg-white p-5 transition-all hover:scale-105 !important;
+    @apply relative mt-5 rounded-[20px] bg-white p-3 transition-all hover:scale-105 !important;
   }
   .summary-type-icon {
-    @apply absolute -left-3 top-[-25px] z-10 w-[190px] object-contain !important;
+    @apply absolute -left-3 top-[-25px] z-10 w-[175px] object-contain !important;
   }
   .summary-type-size {
-    @apply h4 relative z-20 w-full text-right !important;
+    @apply h6 relative z-20 w-full text-right !important;
   }
   .summary-type-title {
     @apply h5 relative z-20 text-center !important;
   }
   .dashboard-recent-files {
-    @apply h-full rounded-[20px] xl:h-[654px] custom-scrollbar overflow-auto bg-white p-5 xl:p-7 !important;
+    @apply h-full rounded-[20px] xl:h-[550px] custom-scrollbar overflow-auto bg-white p-5 xl:p-7 !important;
   }
   .recent-file-details {
     @apply flex w-full justify-between items-center !important;
@@ -220,7 +223,7 @@
 
   /* Type page */
   .page-container {
-    @apply mx-auto flex w-full max-w-7xl flex-col items-center gap-8 !important;
+    @apply mx-auto flex w-full max-w-7xl flex-col items-center gap-6 !important;
   }
   .total-size-section {
     @apply flex mt-2 flex-col justify-between sm:flex-row sm:items-center !important;
@@ -297,7 +300,7 @@
 
   /* Chart */
   .chart {
-    @apply flex items-center rounded-[20px] bg-brand p-2 text-white md:flex-col xl:flex-row !important;
+    @apply flex items-center rounded-[20px] bg-brand p-1 text-white md:flex-col xl:flex-row !important;
   }
   .chart-container {
     @apply mx-auto aspect-square w-[180px] text-white xl:w-[200px] !important;
@@ -306,21 +309,21 @@
     @apply first:fill-white/20 last:fill-brand !important;
   }
   .chart-details {
-    @apply flex-1 items-start px-3 py-0 sm:px-5 lg:p-3 xl:pr-5 !important;
+    @apply flex-1 items-start px-2 py-0 sm:px-4 lg:p-2 xl:pr-4 !important;
   }
   .chart-total-percentage {
-    @apply fill-white text-4xl font-bold !important;
+    @apply fill-white text-3xl font-bold !important;
   }
   .chart-title {
     @apply h3 font-bold md:text-center lg:text-left !important;
   }
   .chart-description {
-    @apply subtitle-1 mt-2 w-full text-white/70 md:text-center lg:text-left !important;
+    @apply subtitle-2 mt-2 w-full text-white/70 md:text-center lg:text-left !important;
   }
 
   /* FileUploader */
   .uploader-button {
-    @apply primary-btn h-[52px] gap-2 px-10 shadow-drop-1 !important;
+    @apply primary-btn h-[45px] gap-1 px-8 shadow-drop-1 !important;
   }
   .uploader-preview-list {
     @apply fixed bottom-10 right-10 z-50 flex size-full h-fit max-w-[480px] flex-col gap-3 rounded-[20px] bg-white p-7 shadow-drop-3 !important;
@@ -341,10 +344,10 @@
     @apply hidden items-center justify-between gap-5 p-5 sm:flex lg:py-3 xl:gap-10 !important;
   }
   .header-wrapper {
-    @apply flex-center min-w-fit gap-4 !important;
+    @apply flex-center min-w-fit gap-2 !important;
   }
   .sign-out-button {
-    @apply flex-center h-[52px] min-w-[54px] items-center rounded-full bg-brand/10 p-0 text-brand shadow-none transition-all hover:bg-brand/20 !important;
+    @apply flex-center h-[48px] min-w-[54px] items-center rounded-full bg-brand/10 p-0 text-brand shadow-none transition-all hover:bg-brand/20 !important;
   }
 
   /* Mobile Navigation */
